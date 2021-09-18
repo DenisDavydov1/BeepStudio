@@ -64,8 +64,8 @@ namespace BeepStudio
             
             var seq4 = new Sequencer.Sequencer(bpm);
             seq4
-                .AddTrack(new Track("----|----|----|----|+---|----|----|----", new Sequence().AddNote(NoteFrequency.A1S, seq4.Duration.Whole)))
                 .AddTrack(new Track("+---|----|----|----|----|----|----|----", new Sequence().AddNote(NoteFrequency.G1S, seq4.Duration.Whole)))
+                .AddTrack(new Track("----|----|----|----|+---|----|----|----", new Sequence().AddNote(NoteFrequency.F1S, seq4.Duration.Whole)))
                 .AddTrack(new Track("----|----|----|-+--|----|----|----|----", new Sequence().AddSpeech("How'd you like it?")))
                 .AddTrack(new Track("----|----|----|----|+---|----|----|----", new Sequence().AddSystemSound(SystemSounds.Hand)))
                 ;
@@ -94,7 +94,6 @@ namespace BeepStudio
                 ;
             
             seq5.Loop(2);
-            
             seq6.Loop(1);
             seq1.Loop(1);
 
