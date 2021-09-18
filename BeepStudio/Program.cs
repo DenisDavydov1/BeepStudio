@@ -9,6 +9,7 @@ namespace BeepStudio
     {
         private static void Main()
         {
+            TrackPack.WeAreNumberOne(1600).Play();
             TechnoTrack();
         }
 
